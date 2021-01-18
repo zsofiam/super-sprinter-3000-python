@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Add New User Story</title>
+    <style>
+        textarea, input{
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-<form>
-adjál valamit
-</form>
+{% if story %}
+    <h1>Update User Story</h1>
+    {% else %}
+    <h1>Add User Story</h1>
+{% endif %}
+
+{% if story %}
+    <form action="/story/{{ story["id"] }}" method="post">
+{% else %}
+    <form action="/story" method="post">
+{% endif %}
+    <form action="/story" method="post">
+
+        <label for="story-title">Story Title:</label>
+        <input id="story-title" name="story-title" minlength="5" value="{{ story["title"] if story}}">
+        <label for="user-story">User Story:</label>
+        <textarea id="user-story" name="user-story" rows="5" cols="50">{{ story["user_story"] if story}}</textarea>
+        <label for="acceptance-criteria">Acceptance Criteria:</label>
+        <textarea id="acceptance-criteria" name="acceptance-criteria" rows="5" cols="50">{{ story["acceptance_criteria"] if story }}</textarea>
+        <label for="business-value">Business Value:</label>
+        <input type="number" id="business-value" name="business-value" min="100" max="1500" step="100" value="{{ story["business_value"] if story }}">
+        <label for="estimation">Estimation:</label>
+        <input type="number" id="estimation" name="estimation" min="0.5" max="40" step="0.5" value="{{ story["estimation"] if story }}">
+
+        {% if story %}
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+            {% for status in statuses %}
+                {% if status == story["status"] %}
+                    <option value="{{ status }}" selected>{{ status }}</option>
+                {% else %}
+                    <option value="{{ status }}">{{ status }}</option>
+                {% endif %}
+            {% endfor %}
+            </select>
+            <button type="submit">Update User Story</button>
+        {% else %}
+            <button type="submit">Add new User Story!</button>
+        {% endif %}
+
+
+    </form>
 </body>
 </html>
