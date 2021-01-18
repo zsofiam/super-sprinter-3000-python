@@ -1,1 +1,49 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Requests Table</title>
+    <style>
+        table, th, td {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1>Super Sprinter 3000</h1>
+<a href="/story">Add new User Story</a>
+<br>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Story Title</th>
+        <th>User Story</th>
+        <th>Acceptance Criteria</th>
+        <th>Business Value</th>
+        <th>Estimation</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for story in user_stories %}
+        <tr>
+            {% for key in story %}
+
+            <td>
+                {%  if key == 'title' %}
+                <a href="/story/{{ story['id'] }}">{{story['title']}}</a>
+                {% else %}
+                {{ story.get(key) }}
+                {% endif %}
+            </td>
+
+            {%  endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
+
