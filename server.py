@@ -40,7 +40,6 @@ def edit_story(story_id):
         user_story["acceptance_criteria"] = request.form["acceptance-criteria"]
         user_story["business_value"] = request.form["business-value"]
         user_story["estimation"] = request.form["estimation"]
-        user_story["id"] = data_handler.get_new_id()
         user_story["status"] = request.form["status"]
         data_handler.add_user_story(user_story)
         return redirect('/')

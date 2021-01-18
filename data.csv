@@ -3,12 +3,13 @@ id,title,user_story,acceptance_criteria,business_value,estimation,status
 2,Add new User Stories,"As a User,<br>I want to be able to add a new User stories,<br>So I can extend the list of requirements","When I open the website (`/`),<br>And I click the ""Add User Story"" link<br>Then ensure I see form where I can add details of the new User Story,<br>And if I submit the form, this US gets saved.",800,4,planning
 3,Update existing User Stories,"As a User,<br>I want to be able to change details of an existing User Story,<br>So that I can keep them up-to-date with the current info.","When I open the website (`/`),<br>And I click the title of a User Story,<br>Then ensure I see a form prefilled with the details of the User Story,<br>And when I submit the changed data, ensure it gets save,<br>And ensure it overwrites the previous details, not creating a new User Story.",700,6,planning
 8,wwwwwwwwwwww,aaaaaaaaaaaaaaaaaaaaaaaaaa,aaaaaaaaaaaaaaaaaaaaaa,100,0.5,planning
-9,new new new,stroy stroaysdfg,afbgaefv,1500,11,planning
 10,dddddddddddddddddddd,ddddddddddd,ddddddddddddddddd,100,0.5,planning
 11,eeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeee,1500,15.5,planning
-12,eeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeee,1500,15.5,planning
 13,new new new,stroy stroaysdfg,afbgaefv,1500,11,planning
 14,List all User Stories,"As a User,<br>I want to see all the previously saved User stories,<br>So I get an overview of all requirements<br>","Given that there are any number ({0..n}) of saved User Stories,<br>When I open the website (`/`),<br>Then ensure I see a table with all the stored data",1000,2,planning
 16,dddddddddddddddddddd,ddddddddddd,ddddddddddddddddd,100,0.5,planning
 18,dőőőőőőőőőőéééééééééééééé,dőőőőőőőőőőőőő,ddddddddddddddddd,100,0.5,review
-19,new new newhhhhhhhhhhúúúúúúúúúúúú,stroy stroaysdfghhhhhhhhhhhhhhh,afbgaefvhhhhhhhhhhhhhhh,1000,10.5,planning
+19,new new newhhhhhhhhhhúúúúúúúúúúúú,stroy stroaysdfghhhhhhhhhhhhhhh,afbgaefvh,1000,14,in progress
+12,eeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeeeeee,eeeeeeeeeeeeeeeeeeeeeeee,1500,15.5,planning
+9,new new newhhhhhhhhhh,stroy stroaysdfg,afbgaefv,1500,11,done
+20,óóóóóóóóóóóóóóóóóóóóóóó,óóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóó,óóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóó,400,7,planning
